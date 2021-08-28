@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 
 const NavSec = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
     const offset = window.screenY;
-    if (offset > 200) setScrolled(true);
-    else setScrolled(false);
+    offset > 200 ? setScrolled(true) : setScrolled(false);
   };
 
   useEffect(() => {
@@ -18,32 +18,34 @@ const NavSec = () => {
   });
 
   let x = ["navbar"];
-  if (scrolled) x.push("fixed");
+  scrolled && x.push("fixed");
 
   return (
-    <Navbar className={x.join(" ")}>
+    <>
+      <Navbar className={x.join(' ')} expand='md' light>
+        <Link to="/" className="navbar-brand">
+          <b>ilosrim</b>
+        </Link>
 
-      <Link to="/" className="navbar-brand">
-        <b>ilosrim</b>
-      </Link>
-
-      <NavbarToggler onClick={toggle} />
-      
-      <Collapse isOpen={isOpen} navbar>
-        <Nav className="ml-auto">
-          <Link to="/">Home</Link>
-        </Nav>
-        <Nav className="ml-auto">
-          <Link to="/">Portfolio</Link>
-        </Nav>
-        <Nav className="ml-auto">
-          <Link to="/">Setup</Link>
-        </Nav>
-        <Nav className="ml-auto">
-          <Link to="/">About</Link>
-        </Nav>
-      </Collapse>
-    </Navbar>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav navbar>
+            <NavItem>
+              <Link to='/'>Home</Link>
+            </NavItem>
+            <NavItem>
+              <Link to='/'>Portfolio</Link>
+            </NavItem>
+            <NavItem>
+              <Link to='/'>Setup</Link>
+            </NavItem>
+            <NavItem>
+              <Link to='/'>About</Link>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </>
   );
 };
 

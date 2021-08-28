@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/main.scss';
+import './styles/animation.scss';
 import HomeMain from './home/HomeMain';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
