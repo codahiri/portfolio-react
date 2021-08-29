@@ -1,5 +1,6 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 html{
   overflow-x: hidden;
@@ -9,11 +10,12 @@ body{
   overflow-x: hidden;
 }
 
+// navbar
 nav{
   padding: 15px 80px!important;
   animation: animNav 1s ease ;
   .navbar-brand{
-    font-size: 24px;
+    font-size: 32px;
     b{
       font-family: 'Roboto Mono', monospace!important;
       font-weight: 700;
@@ -39,6 +41,7 @@ nav{
     }
   }
 }
+// navbar fixed
 nav.fixed{
   padding: 15px 80px!important;
   position: fixed;
@@ -49,4 +52,34 @@ nav.fixed{
   backdrop-filter: blur(10px);
   background-color: #101010cf;
   box-shadow: 0 5px 15px #0c0c0cde;
+}
+
+// about
+.aboutinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 70px !important;
+  .side1{
+    width: 55%;
+    margin: 20px 0;
+    .title{
+      font-size: 70px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: normal;
+      color: #fff;
+    }
+    .discription{
+      width: 70%;
+      margin: 15px 3px 60px;
+      color: #242b2f;
+    }
+  }
+  .side2{
+    img{
+      border-radius: 50%;
+      width: 500px;
+    }
+  }
 }
