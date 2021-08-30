@@ -5,7 +5,8 @@
 // variables
 $bgColor: #101010;
 
-$whiteColor: #fff;
+$whiteColor: #ffffff;
+$darkColor: #00000000;
 $titleColor: #E0E0E0;
 $mainColor: #949494;
 
@@ -20,10 +21,10 @@ $robotoSlab: 'Roboto Slab', serif !important;
   width: 3px;
 }
 ::-webkit-scrollbar-track{
-  background-color: #000;
+  background-color: $darkColor;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #fff;
+  background-color: $whiteColor;
   border-radius: 25px;
 }
 
@@ -96,7 +97,6 @@ nav.fixed{
 .aboutinfo{
   display: flex;
   justify-content: center;
-  // align-items: center;
   flex-direction: row-reverse;
   padding: 70px 0 !important;
   .side1{
