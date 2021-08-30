@@ -119,7 +119,7 @@ nav.fixed{
       .linkBtn{
         background-color: $homeButton;
         padding: 17px 40px;
-        color: $whiteColor;
+        color: $titleColor;
         font-size: 20px;
         text-decoration: none;
         font-family: $robotoSlab;
@@ -127,7 +127,7 @@ nav.fixed{
         border-radius: 4px;
         transition: all 0.3s linear;
         &:hover{
-          opacity: 0.8;
+          opacity: 0.5;
         }
         &:nth-child(2){
           background-color: $homeButton2;
