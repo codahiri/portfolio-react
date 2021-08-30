@@ -1,14 +1,14 @@
 import React from 'react';
 import NavSec from './NavSec';
-import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
 import AboutInfo from './AboutInfo';
 
 const HomeMain = () => {
   return (
     <>
-      <Reveal effect='animNav'>
+      <Slide top duration='1250'>
         <NavSec />
-      </Reveal>
+      </Slide>
       <AboutInfo />
     </>
   );
