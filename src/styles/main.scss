@@ -9,8 +9,8 @@ $whiteColor: #fff;
 $titleColor: #E0E0E0;
 $mainColor: #949494;
 
-$homeButton: #2B2B2B;
-$homeButton2: #2e89d3;
+$homeButtonGray: #2B2B2B;
+$homeButtonBlue: #2e89d3;
 
 $robotoMono: 'Roboto Mono', monospace !important;
 $robotoSlab: 'Roboto Slab', serif !important;
@@ -117,7 +117,7 @@ nav.fixed{
     }
     .buttons{
       .linkBtn{
-        background-color: $homeButton;
+        background-color: $homeButtonGray;
         padding: 17px 40px;
         color: $titleColor;
         font-size: 20px;
@@ -130,7 +130,7 @@ nav.fixed{
           opacity: 0.5;
         }
         &:nth-child(2){
-          background-color: $homeButton2;
+          background-color: $homeButtonBlue;
           margin-left: 10px;
           transition: all 0.3s linear;
           &:hover{
