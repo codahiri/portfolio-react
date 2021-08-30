@@ -27,6 +27,7 @@ function AboutInfo() {
     <div className='aboutinfo'>
       {
         portfolios.map(portfolio => (
+
           <>
             <div className='side2'>
               <Zoom duration='1500'>
@@ -75,6 +76,7 @@ function AboutInfo() {
               </div>
             </div>
           </>
+          
         ))
       }
     </div>
