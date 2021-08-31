@@ -20,7 +20,7 @@ function SetupMain(props) {
       {
         setups.map((setup) => (
           <div className='setup-image'>
-            <img src={setup.image} alt='Setup image' />
+            <img src={setup.image} alt='Setup pic' />
           </div>
         ))
       }
@@ -30,7 +30,7 @@ function SetupMain(props) {
             <div className='my-setup'>
               <span className='laptop-specs'>
                 <ul>
-                  <a href='https://www.acer.com/ac/en/GB/content/model/NX.HNTEK.002' target='_blank'>
+                  <a href='https://www.acer.com/ac/en/GB/content/model/NX.HNTEK.002' target='_blank' rel="noreferrer">
                     <h2 className='laptop-logo'>Aspire 3 A315-55G</h2>
                     <Shake duration='1500'>
                       <ArrowUpwardIcon />

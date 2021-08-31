@@ -31,7 +31,7 @@ function AboutInfo() {
           <>
             <div className='side2'>
               <Zoom duration='1500'>
-                <img className='myImage' src={portfolio.image} alt='my image' />
+                <img className='myImage' src={portfolio.image} alt='my pic.' />
               </Zoom>
             </div>
             <div className='side1'>
@@ -43,7 +43,7 @@ function AboutInfo() {
 
               <Slide left duration='1000'>
                 <div className='buttons'>
-                  <Link className='linkBtn' to='/'>
+                  <Link className='linkBtn' to='/about'>
                     About me
                   </Link>
                   <Link className='linkBtn' to='/portfolio'>
@@ -53,22 +53,22 @@ function AboutInfo() {
               </Slide>
 
               <div className='socialNet'>
-                <a className='links' href='https://github.com/ilosrim' target='_blank'>
+                <a className='links' href='https://github.com/ilosrim' target='_blank' rel="noreferrer">
                   <Jump duration='1400'>
                     <GitHubIcon className='github iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://linkedin.com/in/ilosrim' target='_blank'>
+                <a className='links' href='https://linkedin.com/in/ilosrim' target='_blank' rel="noreferrer" >
                   <Jump duration='1300'>
                     <LinkedInIcon className='linkedin iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://twitter.com/ilosrim' target='_blank'>
+                <a className='links' href='https://twitter.com/ilosrim' target='_blank' rel="noreferrer" >
                   <Jump duration='1200'>
                     <TwitterIcon className='twitter iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://instagram.com/ilosrim' target='_blank'>
+                <a className='links' href='https://instagram.com/ilosrim' target='_blank' rel="noreferrer" >
                   <Jump duration='1000'>
                     <InstagramIcon className='instagram iconSvg' />
                   </Jump>

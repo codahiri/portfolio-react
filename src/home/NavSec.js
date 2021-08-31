@@ -10,7 +10,7 @@ const NavSec = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    offset > 100 ? setScrolled(true) : setScrolled(false);
+    offset > 50 ? setScrolled(true) : setScrolled(false);
   };
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const NavSec = () => {
               <Link to='/setup'>Setup</Link>
             </NavItem>
             <NavItem>
-              <Link to='/'>About</Link>
+              <Link to='/about'>About</Link>
             </NavItem>
           </Nav>
         </Collapse>

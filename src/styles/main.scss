@@ -175,10 +175,10 @@ nav.fixed {
   backdrop-filter: blur(10px);
   background-color: #101010cf;
   box-shadow: 0 5px 15px #0c0c0cde;
-  transition: all 0.3s linear;
+  // transition: all 0.3s linear;
 }
 
-// about
+// Main about info
 .aboutinfo {
   display: flex;
   justify-content: center;
@@ -308,7 +308,85 @@ nav.fixed {
     }
   }
 }
-
+// setup
+.setup-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .setup-image {
+    display: flex;
+    justify-content: center;
+    
+    img {
+      margin-top: 100px;
+      width: 50%;
+      border-radius: 10px;
+    }
+  }
+  
+  .col-md-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+    .my-setup {
+      display: flex;
+      
+      .laptop-specs {
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          .laptop-logo {
+            @include setupTitle();
+          }
+          svg {
+            @include setupSvg();
+          }
+        }
+        li {
+          @include setupLI();
+        }
+      }
+      .keyboard-specs {
+        .keyboard-title {
+          display: flex;
+          align-items: center;
+          
+          h2 {
+            @include setupTitle();
+          }
+          svg {
+            @include setupSvg();
+          }
+        }
+        li {
+          @include setupLI();
+        }
+      }
+    }
+  }
+}
+// about
+.about-main{
+  margin: 100px 0;
+  .row{
+    margin: 0 60px;
+    .about-info{
+      p{
+        font-size: 24px;
+        font-family: $robotoSlab;
+        color: $mainColor;
+        // line-height: 1.5px;
+        letter-spacing: 2px;
+        text-align: justify;
+      }
+    }
+  }
+}
 // footer
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -337,69 +415,6 @@ nav.fixed {
       color: $bgColor2;
       font-size: 20px;
       margin-left: 5px;
-    }
-  }
-}
-
-// setup
-.setup-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  .setup-image {
-    display: flex;
-    justify-content: center;
-
-    img {
-      margin-top: 100px;
-      width: 50%;
-      border-radius: 10px;
-    }
-  }
-
-  .col-md-12 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-
-    .my-setup {
-      display: flex;
-
-      .laptop-specs {
-        a {
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          .laptop-logo {
-            @include setupTitle();
-          }
-          svg {
-            @include setupSvg();
-          }
-        }
-        li {
-          @include setupLI();
-        }
-      }
-      .keyboard-specs {
-        .keyboard-title {
-          display: flex;
-          align-items: center;
-
-          h2 {
-            @include setupTitle();
-          }
-          svg {
-            @include setupSvg();
-          }
-        }
-        li {
-          @include setupLI();
-        }
-      }
     }
   }
 }
