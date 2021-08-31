@@ -6,6 +6,7 @@
 
 // colors
 $bgColor: #101010;
+$bgColor2: rgb(255, 0, 0);
 
 $whiteColor: #ffffff;
 $darkColor: #00000000;
@@ -17,8 +18,10 @@ $homeButtonGray: #2b2b2b;
 $homeButtonBlue: #2e89d3;
 
 // font-family
-$robotoMono: "Roboto Mono", monospace !important;
-$robotoSlab: "Roboto Slab", serif !important;
+$robotoMono: "Roboto Mono",
+monospace !important;
+$robotoSlab: "Roboto Slab",
+serif !important;
 
 // mixin
 @mixin PageTitle {
@@ -29,6 +32,7 @@ $robotoSlab: "Roboto Slab", serif !important;
   letter-spacing: 2px;
   margin: 0;
 }
+
 @mixin PageTitleCommit {
   font-family: $robotoSlab;
   font-weight: normal;
@@ -37,6 +41,7 @@ $robotoSlab: "Roboto Slab", serif !important;
   letter-spacing: 4px;
   margin: 0;
 }
+
 @mixin Button {
   background-color: $homeButtonGray;
   padding: 17px 35px;
@@ -47,26 +52,51 @@ $robotoSlab: "Roboto Slab", serif !important;
   font-weight: 500;
   border-radius: 4px;
   transition: all 0.3s linear;
+
   &:hover {
     opacity: 0.5;
   }
+
   &:nth-child(2) {
     background-color: $homeButtonBlue;
     margin-left: 10px;
     transition: all 0.3s linear;
+
     &:hover {
       opacity: 0.8;
     }
   }
 }
 
+@mixin setupLI {
+  color: $mainColor;
+  font-family: $robotoSlab;
+  // margin-left: 18px;
+  margin: 20px 18px 10px;
+  letter-spacing: 0.5px;
+}
+
+@mixin setupSvg {
+  font-size: 34px;
+  margin-left: 5px;
+  color: $mainColor;
+}
+
+@mixin setupTitle {
+  color: $titleColor;
+  font-family: $robotoSlab;
+  margin: 0;
+}
+
 // edit scrollbar
 ::-webkit-scrollbar {
   width: 3px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: $darkColor;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: $whiteColor;
   border-radius: 25px;
@@ -75,6 +105,7 @@ $robotoSlab: "Roboto Slab", serif !important;
 html {
   overflow-x: hidden;
 }
+
 body {
   background-color: $bgColor !important;
   overflow-x: hidden;
@@ -83,20 +114,25 @@ body {
 // navbar
 nav {
   padding: 15px 80px !important;
+
   .navbar-brand {
     font-size: 32px;
+
     b {
       font-family: $robotoMono;
       font-weight: 700;
       color: $whiteColor !important;
     }
   }
+
   .navbar-nav {
     margin-left: auto;
+
     .nav-item {
       margin: 20px;
       font-size: 16px;
       font-family: $robotoMono;
+
       a {
         color: $mainColor !important;
         font-weight: 500;
@@ -104,6 +140,7 @@ nav {
         transition: all 0.3s linear;
         -webkit-transition: all 0.3s linear;
         position: relative;
+
         &::after {
           content: "";
           position: absolute;
@@ -114,8 +151,10 @@ nav {
           background-color: $whiteColor;
           transition: all 0.3s linear;
         }
+
         &:hover {
           color: $whiteColor !important;
+
           &::after {
             width: 100%;
           }
@@ -124,6 +163,7 @@ nav {
     }
   }
 }
+
 // navbar fixed
 nav.fixed {
   padding: 15px 80px !important;
@@ -135,22 +175,27 @@ nav.fixed {
   backdrop-filter: blur(10px);
   background-color: #101010cf;
   box-shadow: 0 5px 15px #0c0c0cde;
+  transition: all 0.3s linear;
 }
+
 // about
 .aboutinfo {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
   padding: 70px 0 !important;
+
   .side1 {
     width: 55%;
     margin: 20px 0;
+
     .title {
       font-size: 70px;
       font-family: $robotoSlab;
       font-weight: 600;
       color: $titleColor !important;
     }
+
     .description {
       width: 70%;
       margin: 15px 3px 60px;
@@ -158,20 +203,25 @@ nav.fixed {
       font-size: 20px;
       font-family: $robotoSlab;
     }
+
     .buttons {
       .linkBtn {
         @include Button();
       }
     }
+
     .socialNet {
       display: flex;
       margin-top: 50px;
+
       .links {
         padding: 0 30px 0 0;
+
         .iconSvg {
           font-size: 35px;
           color: $titleColor;
           transition: all 0.3s linear;
+
           &:hover {
             opacity: 0.5;
             transform: scale(1.3);
@@ -180,6 +230,7 @@ nav.fixed {
       }
     }
   }
+
   .side2 {
     .myImage {
       border-radius: 50%;
@@ -187,30 +238,39 @@ nav.fixed {
     }
   }
 }
+
 // portfolio
 .titles {
   text-align: center;
   margin-top: 75px;
+
   .title {
     @include PageTitle();
   }
+
   .commit {
     @include PageTitleCommit();
   }
 }
+
 .row {
   .col-md-12 {
     padding-top: 50px;
+    padding-bottom: 50px;
+
     .projectCard {
       display: flex;
       justify-content: space-around;
       align-items: center;
       margin: 50px 0;
+
       .projectImage {
         width: 50%;
       }
+
       .projectInfo {
         margin: 30px 50px;
+
         .projectAbout {
           .projectName {
             color: $titleColor !important;
@@ -218,6 +278,7 @@ nav.fixed {
             font-weight: 600;
             letter-spacing: 2px;
           }
+
           .projectDesc {
             color: $mainColor !important;
             font-family: $robotoSlab;
@@ -225,37 +286,120 @@ nav.fixed {
             letter-spacing: 3px;
           }
         }
+
         .projectButtons {
           margin-top: 50px;
+
           .buttons {
             @include Button();
           }
         }
       }
     }
-    &:nth-child(2n){
-      .projectCard{
+
+    &:nth-child(2n) {
+      .projectCard {
         flex-direction: row-reverse;
-        .projectInfo{
+
+        .projectInfo {
           margin: 30px 0;
         }
       }
     }
   }
 }
+
 // footer
-.footer{
-  border-top: 2px solid $whiteColor;
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 20px 0;
   text-align: center;
-  .footerTitle{
+
+  .footerTitle {
     font-family: $robotoSlab;
+    font-size: 17px;
     color: $mainColor;
-    .footerLogo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footerLogo {
       text-decoration: none;
       color: $whiteColor;
       font-family: $robotoMono;
       font-weight: bold;
+      margin-right: 5px;
+      font-size: 18px;
+    }
+
+    .heartIcon {
+      color: $bgColor2;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+  }
+}
+
+// setup
+.setup-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .setup-image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-top: 100px;
+      width: 50%;
+      border-radius: 10px;
+    }
+  }
+
+  .col-md-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .my-setup {
+      display: flex;
+
+      .laptop-specs {
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          .laptop-logo {
+            @include setupTitle();
+          }
+          svg {
+            @include setupSvg();
+          }
+        }
+        li {
+          @include setupLI();
+        }
+      }
+      .keyboard-specs {
+        .keyboard-title {
+          display: flex;
+          align-items: center;
+
+          h2 {
+            @include setupTitle();
+          }
+          svg {
+            @include setupSvg();
+          }
+        }
+        li {
+          @include setupLI();
+        }
+      }
     }
   }
 }

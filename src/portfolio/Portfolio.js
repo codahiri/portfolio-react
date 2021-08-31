@@ -11,13 +11,9 @@ function Portfolio() {
       <Slide top duration='1000'>
         <NavSec />
       </Slide>
-      <Slide bottom duration='1000'>
         <PageInfo />
-      </Slide>
-      <Slide top duration='1000'>
-        <Projects />
-      </Slide>
       <Slide bottom duration='500'>
+        <Projects />
         <Footer />
       </Slide>
     </>
