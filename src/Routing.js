@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/main.scss';
 import './styles/animation.scss';
+import './styles/responsive.scss';
 import HomeMain from './home/HomeMain';
 import Portfolio from './portfolio/Portfolio';
 import SetUp from './setup/SetUp';

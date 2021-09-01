@@ -1,0 +1,48 @@
+// color
+$toggler: #2e89d3;
+
+@media (min-width:320px) and (max-width:330px) {
+  nav {
+    padding: 12px !important;
+
+    .navbar-brand {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+
+    .navbar-toggler {
+      background-color: $toggler;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 15px 0 !important;
+        font-size: 17px !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .aboutinfo {
+    display: inline;
+    padding: 0;
+
+    .side2 {
+      text-align: center;
+      .myImage {
+        width: 250px;
+        border-radius: 15px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
