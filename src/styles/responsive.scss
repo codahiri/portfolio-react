@@ -39,38 +39,46 @@ $toggler: #2e89d3;
     padding: 75px 30px !important;
     // flex-direction: column;
     justify-content: space-between;
-    
-    .side1{
+
+    .side1 {
+
       // text-align: center;
       // width: 100%;
-      .title{
+      .title {
         font-size: 42px;
       }
-      .description{
+
+      .description {
         width: 100%;
         font-size: 24px !important;
         // padding: 0 15px !important;
         margin: 15px 0 25px !important;
       }
-      .buttons{
-        .linkBtn{
+
+      .buttons {
+        .linkBtn {
           padding: 8px 22px !important;
           font-size: 15px;
         }
       }
-      .socialNet{
+
+      .socialNet {
         // justify-content: center;
         margin-top: 30px !important;
-        .links{
+
+        .links {
           padding: 0 5px !important;
-          .iconSvg{
+
+          .iconSvg {
             font-size: 24px;
           }
         }
       }
     }
+
     .side2 {
       text-align: center;
+
       .myImage {
         width: 250px;
         border-radius: 50%;
@@ -117,38 +125,46 @@ $toggler: #2e89d3;
     padding: 75px 30px !important;
     // flex-direction: column;
     // justify-content: center;
-    
-    .side1{
+
+    .side1 {
+
       // text-align: center;
       // width: 100%;
-      .title{
+      .title {
         font-size: 42px;
       }
-      .description{
+
+      .description {
         width: 100%;
         font-size: 24px !important;
         // padding: 0 15px !important;
         margin: 15px 0 25px !important;
       }
-      .buttons{
-        .linkBtn{
+
+      .buttons {
+        .linkBtn {
           padding: 8px 22px !important;
           font-size: 15px;
         }
       }
-      .socialNet{
+
+      .socialNet {
         // justify-content: center;
         margin-top: 30px !important;
-        .links{
+
+        .links {
           padding: 0 5px !important;
-          .iconSvg{
+
+          .iconSvg {
             font-size: 24px;
           }
         }
       }
     }
+
     .side2 {
       text-align: center;
+
       .myImage {
         width: 250px;
         border-radius: 50%;
@@ -193,38 +209,46 @@ $toggler: #2e89d3;
     padding: 0 !important;
     flex-direction: column;
     justify-content: center;
-    
-    .side1{
+
+    .side1 {
       text-align: center;
       width: 100%;
-      .title{
+
+      .title {
         font-size: 42px;
       }
-      .description{
+
+      .description {
         width: 100%;
         font-size: 24px !important;
         padding: 0 15px !important;
         margin: 15px 0 25px !important;
       }
-      .buttons{
-        .linkBtn{
+
+      .buttons {
+        .linkBtn {
           padding: 8px 22px !important;
           font-size: 15px;
         }
       }
-      .socialNet{
+
+      .socialNet {
         justify-content: center;
         margin-top: 30px !important;
-        .links{
+
+        .links {
           padding: 0 5px !important;
-          .iconSvg{
+
+          .iconSvg {
             font-size: 24px;
           }
         }
       }
     }
+
     .side2 {
       text-align: center;
+
       .myImage {
         width: 250px;
         border-radius: 15px;
@@ -270,38 +294,46 @@ $toggler: #2e89d3;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-    
-    .side1{
+
+    .side1 {
       text-align: center;
       width: 100%;
-      .title{
+
+      .title {
         font-size: 27px;
       }
-      .description{
+
+      .description {
         width: 100%;
         font-size: 15px !important;
         padding: 0 15px !important;
         margin: 15px 0 25px !important;
       }
-      .buttons{
-        .linkBtn{
+
+      .buttons {
+        .linkBtn {
           padding: 8px 22px !important;
           font-size: 15px;
         }
       }
-      .socialNet{
+
+      .socialNet {
         justify-content: center;
         margin-top: 30px !important;
-        .links{
+
+        .links {
           padding: 0 5px !important;
-          .iconSvg{
+
+          .iconSvg {
             font-size: 24px;
           }
         }
       }
     }
+
     .side2 {
       text-align: center;
+
       .myImage {
         width: 250px;
         border-radius: 15px;
@@ -338,6 +370,7 @@ $toggler: #2e89d3;
         margin: 15px 0 !important;
         font-size: 17px !important;
         text-align: center;
+        padding-left: 0 !important;
       }
     }
   }
@@ -346,44 +379,462 @@ $toggler: #2e89d3;
     padding: 0 !important;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px ;
-    
-    .side1{
+    margin-top: 20px;
+
+    .side1 {
       text-align: center;
       width: 100%;
-      .title{
+
+      .title {
         font-size: 27px;
       }
-      .description{
+
+      .description {
         width: 100%;
         font-size: 15px !important;
         padding: 0 15px !important;
         margin: 15px 0 25px !important;
       }
-      .buttons{
-        .linkBtn{
+
+      .buttons {
+        .linkBtn {
           padding: 8px 22px !important;
           font-size: 15px;
         }
       }
-      .socialNet{
+
+      .socialNet {
         justify-content: center;
         margin-top: 30px !important;
-        .links{
+
+        .links {
           padding: 0 5px !important;
-          .iconSvg{
+
+          .iconSvg {
             font-size: 24px;
           }
         }
       }
     }
+
     .side2 {
       text-align: center;
+
       .myImage {
         width: 250px;
         border-radius: 15px;
         margin-top: 30px;
       }
     }
+  }
+}
+
+// Portfolio section
+
+@media screen and (max-width:1200px) {
+  .titles {
+    margin: 50px 0;
+
+    .title {
+      font-size: 45px !important;
+    }
+
+    .commit {
+      font-size: 24px !important;
+    }
+  }
+
+  .row {
+    .col-md-12 {
+      padding-bottom: 35px !important;
+      padding-top: 0 !important;
+
+      .projectCard {
+        display: inline-block;
+        margin: 0 !important;
+
+        .projectImage {
+          width: 100%;
+        }
+
+        .projectInfo {
+          margin: 0;
+          padding: 10px 0 !important;
+
+          .projectAbout {
+            .projectName {
+              font-size: 18px;
+            }
+
+            .projectDesc {
+              font-size: 13px;
+            }
+          }
+
+          .projectButtons {
+            margin-top: 20px !important;
+
+            .buttons {
+              padding: 10px 22px;
+              font-size: 13px;
+
+              svg {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .projectCard {
+          .projectInfo {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  .footerTitle {
+    font-size: 8px !important;
+
+    .footerLogo {
+      font-size: 13px !important;
+    }
+  }
+
+  .heartIcon {
+    font-size: 13px !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+  .row{
+    .col-md-12{
+      .projectCard{
+        .projectInfo{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .titles {
+    margin: 50px 0;
+
+    .title {
+      font-size: 34px;
+    }
+
+    .commit {
+      font-size: 24px;
+    }
+  }
+
+  .row {
+    .col-md-12 {
+      padding-bottom: 35px !important;
+      padding-top: 0 !important;
+
+      .projectCard {
+        display: inline-block;
+        margin: 0 !important;
+
+        .projectImage {
+          width: 100%;
+        }
+
+        .projectInfo {
+          margin: 0;
+          padding: 10px 0 !important;
+
+          .projectAbout {
+            .projectName {
+              font-size: 24px;
+            }
+
+            .projectDesc {
+              font-size: 18px;
+            }
+          }
+
+          .projectButtons {
+            margin-top: 20px !important;
+
+            .buttons {
+              padding: 10px 22px;
+              font-size: 18px;
+
+              svg {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .projectCard {
+          .projectInfo {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  .footerTitle {
+    font-size: 13px !important;
+
+    .footerLogo {
+      font-size: 16px !important;
+    }
+  }
+
+  .heartIcon {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .titles {
+    margin: 50px 0;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .commit {
+      font-size: 15px;
+    }
+  }
+
+  .row {
+    .col-md-12 {
+      padding-bottom: 35px !important;
+      padding-top: 0 !important;
+
+      .projectCard {
+        display: inline-block;
+        margin: 0 !important;
+
+        .projectImage {
+          width: 100%;
+        }
+
+        .projectInfo {
+          margin: 0;
+          padding: 10px 0 !important;
+
+          .projectAbout {
+            .projectName {
+              font-size: 18px;
+            }
+
+            .projectDesc {
+              font-size: 13px;
+            }
+          }
+
+          .projectButtons {
+            margin-top: 20px !important;
+
+            .buttons {
+              padding: 10px 22px;
+              font-size: 13px;
+
+              svg {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .projectCard {
+          .projectInfo {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  .footerTitle {
+    font-size: 8px !important;
+
+    .footerLogo {
+      font-size: 13px !important;
+    }
+  }
+
+  .heartIcon {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .titles {
+    margin: 50px 0;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .commit {
+      font-size: 15px;
+    }
+  }
+
+  .row {
+    .col-md-12 {
+      padding-bottom: 35px !important;
+      padding-top: 0 !important;
+
+      .projectCard {
+        display: inline-block;
+        margin: 0 !important;
+
+        .projectImage {
+          width: 100%;
+        }
+
+        .projectInfo {
+          margin: 0;
+          padding: 10px 0 !important;
+
+          .projectAbout {
+            .projectName {
+              font-size: 18px;
+            }
+
+            .projectDesc {
+              font-size: 13px;
+            }
+          }
+
+          .projectButtons {
+            margin-top: 20px !important;
+
+            .buttons {
+              padding: 10px 22px;
+              font-size: 13px;
+
+              svg {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .projectCard {
+          .projectInfo {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  .footerTitle {
+    font-size: 13px !important;
+
+    .footerLogo {
+      font-size: 17px !important;
+    }
+  }
+
+  .heartIcon {
+    font-size: 17px !important;
+  }
+}
+
+@media (min-width:320px) and (max-width:375px) {
+  .titles {
+    margin: 50px 0;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .commit {
+      font-size: 15px;
+    }
+  }
+
+  .row {
+    .col-md-12 {
+      padding-bottom: 35px !important;
+      padding-top: 0 !important;
+
+      .projectCard {
+        display: inline-block;
+        margin: 0 !important;
+
+        .projectImage {
+          width: 100%;
+        }
+
+        .projectInfo {
+          margin: 0;
+          padding: 10px 0 !important;
+
+          .projectAbout {
+            .projectName {
+              font-size: 18px;
+            }
+
+            .projectDesc {
+              font-size: 13px;
+            }
+          }
+
+          .projectButtons {
+            margin-top: 20px !important;
+
+            .buttons {
+              padding: 10px 22px;
+              font-size: 13px;
+
+              svg {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .projectCard {
+          .projectInfo {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  .footerTitle {
+    font-size: 8px !important;
+
+    .footerLogo {
+      font-size: 13px !important;
+    }
+  }
+
+  .heartIcon {
+    font-size: 13px !important;
   }
 }
