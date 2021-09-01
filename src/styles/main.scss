@@ -374,15 +374,29 @@ nav.fixed {
 .about-main{
   margin: 100px 0;
   .row{
-    margin: 0 60px;
+    margin: 0;
+
     .about-info{
-      p{
-        font-size: 24px;
-        font-family: $robotoSlab;
-        color: $mainColor;
-        // line-height: 1.5px;
-        letter-spacing: 2px;
-        text-align: justify;
+      display: flex;
+      justify-content: space-between;
+      .about-img{
+        margin: 0 !important;
+        width: 35%;
+        img{
+          width: 100%;
+        }
+      }
+      .about-texts{
+        width: 75%;
+        padding-left: 100px;
+        p{
+          font-size: 24px;
+          font-family: $robotoSlab;
+          color: $mainColor;
+          // line-height: 1.5px;
+          letter-spacing: 2px;
+          text-align: justify;
+        }
       }
     }
   }

@@ -10,7 +10,7 @@ const NavSec = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    offset > 200 ? setScrolled(true) : setScrolled(false);
+    offset > 150 ? setScrolled(true) : setScrolled(false);
   };
 
   useEffect(() => {

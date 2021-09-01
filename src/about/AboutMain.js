@@ -16,23 +16,19 @@ function AboutMain(props) {
     <div className='about-main'>
       <Container>
         <Row>
-          <Col md='6'>
-            {
-              abouts.map(about => (
-                <div className='about-img'>
-                  <img src={about.image} alt='My personal pic.' />
-                </div>
-              ))
-            }
-          </Col>
-          <Col md='6'>
+          <Col md='12' sm='12'>
             <div className='about-info'>
               {
                 abouts.map(about => (
                   <>
-                    <p>{about.textOne}</p>
-                    <p>{about.textTwo}</p>
-                    <p>{about.textThree}</p>
+                    <div className='about-img'>
+                      <img src={about.image} alt='My personal pic.' />
+                    </div>
+                    <div className='about-texts'>
+                      <p>{about.textOne}</p>
+                      <p>{about.textTwo}</p>
+                      <p>{about.textThree}</p>
+                    </div>
                   </>
                 ))
               }
