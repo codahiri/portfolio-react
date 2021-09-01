@@ -1,12 +1,169 @@
+// Home section
 // color
 $toggler: #2e89d3;
 
-@media (min-width:320px) and (max-width:330px) {
+@media screen and (max-width:1200px) {
+  nav {
+    padding: 12px 25px !important;
+
+    .navbar-brand {
+      font-size: 32px !important;
+      padding: 0 10px;
+    }
+
+    .navbar-toggler {
+      background-color: $toggler;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 15px 0 !important;
+        font-size: 17px !important;
+        text-align: center;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .aboutinfo {
+    margin-top: 60px;
+    padding: 75px 30px !important;
+    // flex-direction: column;
+    justify-content: space-between;
+    
+    .side1{
+      // text-align: center;
+      // width: 100%;
+      .title{
+        font-size: 42px;
+      }
+      .description{
+        width: 100%;
+        font-size: 24px !important;
+        // padding: 0 15px !important;
+        margin: 15px 0 25px !important;
+      }
+      .buttons{
+        .linkBtn{
+          padding: 8px 22px !important;
+          font-size: 15px;
+        }
+      }
+      .socialNet{
+        // justify-content: center;
+        margin-top: 30px !important;
+        .links{
+          padding: 0 5px !important;
+          .iconSvg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .side2 {
+      text-align: center;
+      .myImage {
+        width: 250px;
+        border-radius: 50%;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  nav {
+    padding: 12px 25px !important;
+
+    .navbar-brand {
+      font-size: 32px !important;
+      padding: 0 10px;
+    }
+
+    .navbar-toggler {
+      background-color: $toggler;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 15px 0 !important;
+        font-size: 17px !important;
+        text-align: center;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .aboutinfo {
+    margin-top: 60px;
+    padding: 75px 30px !important;
+    // flex-direction: column;
+    // justify-content: center;
+    
+    .side1{
+      // text-align: center;
+      // width: 100%;
+      .title{
+        font-size: 42px;
+      }
+      .description{
+        width: 100%;
+        font-size: 24px !important;
+        // padding: 0 15px !important;
+        margin: 15px 0 25px !important;
+      }
+      .buttons{
+        .linkBtn{
+          padding: 8px 22px !important;
+          font-size: 15px;
+        }
+      }
+      .socialNet{
+        // justify-content: center;
+        margin-top: 30px !important;
+        .links{
+          padding: 0 5px !important;
+          .iconSvg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .side2 {
+      text-align: center;
+      .myImage {
+        width: 250px;
+        border-radius: 50%;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
   nav {
     padding: 12px !important;
 
     .navbar-brand {
-      font-size: 18px;
+      font-size: 32px !important;
       padding: 0 10px;
     }
 
@@ -33,9 +190,193 @@ $toggler: #2e89d3;
   }
 
   .aboutinfo {
-    display: inline;
-    padding: 0;
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    
+    .side1{
+      text-align: center;
+      width: 100%;
+      .title{
+        font-size: 42px;
+      }
+      .description{
+        width: 100%;
+        font-size: 24px !important;
+        padding: 0 15px !important;
+        margin: 15px 0 25px !important;
+      }
+      .buttons{
+        .linkBtn{
+          padding: 8px 22px !important;
+          font-size: 15px;
+        }
+      }
+      .socialNet{
+        justify-content: center;
+        margin-top: 30px !important;
+        .links{
+          padding: 0 5px !important;
+          .iconSvg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .side2 {
+      text-align: center;
+      .myImage {
+        width: 250px;
+        border-radius: 15px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
 
+@media screen and (max-width:425px) {
+  nav {
+    padding: 12px !important;
+
+    .navbar-brand {
+      font-size: 22px !important;
+      padding: 0 10px;
+    }
+
+    .navbar-toggler {
+      background-color: $toggler;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 15px 0 !important;
+        font-size: 17px !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .aboutinfo {
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    
+    .side1{
+      text-align: center;
+      width: 100%;
+      .title{
+        font-size: 27px;
+      }
+      .description{
+        width: 100%;
+        font-size: 15px !important;
+        padding: 0 15px !important;
+        margin: 15px 0 25px !important;
+      }
+      .buttons{
+        .linkBtn{
+          padding: 8px 22px !important;
+          font-size: 15px;
+        }
+      }
+      .socialNet{
+        justify-content: center;
+        margin-top: 30px !important;
+        .links{
+          padding: 0 5px !important;
+          .iconSvg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .side2 {
+      text-align: center;
+      .myImage {
+        width: 250px;
+        border-radius: 15px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width:320px) and (max-width:375px) {
+  nav {
+    padding: 12px !important;
+
+    .navbar-brand {
+      font-size: 18px !important;
+      padding: 0 10px;
+    }
+
+    .navbar-toggler {
+      background-color: $toggler;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 15px 0 !important;
+        font-size: 17px !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .aboutinfo {
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px ;
+    
+    .side1{
+      text-align: center;
+      width: 100%;
+      .title{
+        font-size: 27px;
+      }
+      .description{
+        width: 100%;
+        font-size: 15px !important;
+        padding: 0 15px !important;
+        margin: 15px 0 25px !important;
+      }
+      .buttons{
+        .linkBtn{
+          padding: 8px 22px !important;
+          font-size: 15px;
+        }
+      }
+      .socialNet{
+        justify-content: center;
+        margin-top: 30px !important;
+        .links{
+          padding: 0 5px !important;
+          .iconSvg{
+            font-size: 24px;
+          }
+        }
+      }
+    }
     .side2 {
       text-align: center;
       .myImage {

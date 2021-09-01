@@ -36,10 +36,10 @@ function Projects() {
                       </div>
 
                       <div className='projectButtons'>
-                        <a className='buttons' href={project.github} target='_blank'>
+                        <a className='buttons' href={project.github} target='_blank' rel="noreferrer">
                           Source <GitHubIcon />
                         </a>
-                        <a className='buttons' href={project.code} target='_blank'>
+                        <a className='buttons' href={project.code} target='_blank' rel="noreferrer">
                           Demo <LinkIcon />
                         </a>
                       </div>

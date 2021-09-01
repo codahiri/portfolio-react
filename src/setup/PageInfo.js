@@ -6,7 +6,7 @@ function PageInfo(props) {
       <>
         <div className="titles">
           <h3 className='title'>Setup</h3>
-          <p className='commit'>My minimalistic setup </p>
+          <p className='commit'>My minimalistic setups</p>
         </div>
       </>
     </div>

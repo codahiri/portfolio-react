@@ -17,19 +17,25 @@ function AboutMain(props) {
       <Container>
         <Row>
           <Col md='6'>
-              {
-                abouts.map(about => (
-                  <div className='about-img'>
-                    <img src={about.image} alt='My personal pic.' />
-                  </div>
-                ))
-              }
+            {
+              abouts.map(about => (
+                <div className='about-img'>
+                  <img src={about.image} alt='My personal pic.' />
+                </div>
+              ))
+            }
           </Col>
           <Col md='6'>
             <div className='about-info'>
-                <p>Hello dear ! I'm Mirsoli Mirsutonov and I'm 23 years old. I'm from Uzbekistan, I live in Fergana.</p>
-                <p>I started frontend training independently in October 2020, and from April 2021 I took a 5-month course at PDP IT Academy. Now I have enough skills from HTML, CSS, SCSS, Bootstrap, jQuery, JavaScript, React JS, Redux JS technologies.</p>
-                <p>I like my job and I will be very happy if I solve the given problems quickly.</p>
+              {
+                abouts.map(about => (
+                  <>
+                    <p>{about.textOne}</p>
+                    <p>{about.textTwo}</p>
+                    <p>{about.textThree}</p>
+                  </>
+                ))
+              }
             </div>
           </Col>
         </Row>
