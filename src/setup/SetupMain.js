@@ -38,8 +38,9 @@ function SetupMain(props) {
                   </a>
                   <li>Intel&reg; Core&trade; i3 - 10110U</li>
                   <li>NVIDIA&reg; GeForce&reg; MX230 with 2 GB VRAM</li>
-                  <li>4 GB DDR4 Memory</li>
+                  <li>8 GB DDR4 Memory</li>
                   <li>1000 GB HDD</li>
+                  <li>Kingston A400 120G Internal SSD M.2 2280 SA400M8</li>
                 </ul>
               </span>
               <span className='keyboard-specs'>
