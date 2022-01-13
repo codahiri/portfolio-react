@@ -134,12 +134,13 @@ nav {
       font-family: $robotoMono;
 
       a {
-        color: $mainColor !important;
+        color: $whiteColor !important;
         font-weight: 500;
         text-decoration: none;
         transition: all 0.3s linear;
         -webkit-transition: all 0.3s linear;
         position: relative;
+        letter-spacing: 2px;
 
         &::after {
           content: "";
@@ -148,12 +149,12 @@ nav {
           left: 0;
           width: 0;
           height: 2px;
-          background-color: $whiteColor;
+          background-color: $mainColor;
           transition: all 0.3s linear;
         }
 
         &:hover {
-          color: $whiteColor !important;
+          color: $mainColor !important;
 
           &::after {
             width: 100%;
@@ -308,61 +309,68 @@ nav.fixed {
     }
   }
 }
+
 // setup
 .setup-main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
   .setup-image {
     display: flex;
     justify-content: center;
-    
+
     img {
       margin-top: 100px;
       width: 50%;
       border-radius: 10px;
     }
   }
-  
+
   .col-md-12 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
-    
+
     .my-setup {
       display: flex;
-      
+
       .laptop-specs {
         a {
           text-decoration: none;
           display: flex;
           align-items: center;
+
           .laptop-logo {
             @include setupTitle();
           }
+
           svg {
             @include setupSvg();
           }
         }
+
         li {
           @include setupLI();
         }
       }
+
       .keyboard-specs {
         .keyboard-title {
           display: flex;
           align-items: center;
-          
+
           h2 {
             @include setupTitle();
           }
+
           svg {
             @include setupSvg();
           }
         }
+
         li {
           @include setupLI();
         }
@@ -370,26 +378,32 @@ nav.fixed {
     }
   }
 }
+
 // about
-.about-main{
+.about-main {
   margin: 100px 0;
-  .row{
+
+  .row {
     margin: 0;
 
-    .about-info{
+    .about-info {
       display: flex;
       justify-content: space-between;
-      .about-img{
+
+      .about-img {
         margin: 0 !important;
         width: 35%;
-        img{
+
+        img {
           width: 100%;
         }
       }
-      .about-texts{
+
+      .about-texts {
         width: 75%;
         padding-left: 100px;
-        p{
+
+        p {
           font-size: 24px;
           font-family: $robotoSlab;
           color: $mainColor;
@@ -401,6 +415,7 @@ nav.fixed {
     }
   }
 }
+
 // footer
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
