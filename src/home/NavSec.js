@@ -10,7 +10,7 @@ const NavSec = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    offset > 150 ? setScrolled(true) : setScrolled(false);
+    offset > 100 ? setScrolled(true) : setScrolled(false);
   };
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const NavSec = () => {
   });
 
   let x = ["navbar"];
-  scrolled && x.push("fixed");
+  scrolled && x.push("stiky");
 
   return (
     <>
