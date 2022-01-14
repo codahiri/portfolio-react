@@ -12,6 +12,11 @@ function AboutMain(props) {
     )
   }, []);
 
+  // my age
+  const now = new Date();
+  const age = now.getFullYear() - 1998;
+  console.log(age);
+
   return (
     <div className='about-main'>
       <Container>
@@ -25,7 +30,7 @@ function AboutMain(props) {
                       <img src={about.image} alt='My personal pic.' />
                     </div>
                     <div className='about-texts'>
-                      <p>{about.textOne}</p>
+                      <p>{about.textOneFirst }{ age }{ about.textOneSecond }</p>
                       <p>{about.textTwo}</p>
                       <p>{about.textThree}</p>
                     </div>
