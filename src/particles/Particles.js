@@ -13,12 +13,16 @@ const Particle = () => {
     console.log(container);
   };
 
-  return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
+  return ( <
+    Particles id = "tsparticles"
+    init = {
+      particlesInit
+    }
+    loaded = {
+      particlesLoaded
+    }
+    options = {
+      {
         background: {
           color: {
             value: "#101010",
@@ -78,7 +82,7 @@ const Particle = () => {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -100,7 +104,8 @@ const Particle = () => {
           },
         },
         detectRetina: true,
-      }}
+      }
+    }
     />
   );
 }
