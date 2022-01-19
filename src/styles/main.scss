@@ -280,6 +280,10 @@ nav.fixed {
         margin: 30px 50px;
         width: 50%;
 
+        @media (max-width:768px) {
+          width: auto;
+        }
+
         .projectAbout {
           .projectName {
             color: $titleColor !important;
