@@ -452,4 +452,19 @@ nav.fixed {
       margin-left: 5px;
     }
   }
+
+  .visits {
+    display: inline-block;
+    background-color: $homeButtonBlue;
+    color: $whiteColor;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
 }

@@ -12,6 +12,13 @@
   <meta name="Portfolio Web Site by ilosrim" content="This site was created by React JS and Firebase" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script>
+    function cb(response) {
+      document.getElementById('visits').innerText = response.value;
+    }
+  </script>
+  <script async src="https://api.countapi.xyz/hit/ilosrim.vercel.app/visits?callback=cb"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Portfolio ilosrim</title>
   <style>
     #myBtn {
