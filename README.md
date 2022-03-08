@@ -1,3 +1,3 @@
 # Portfolio website
 
-_by [ilosrim](https://ilosrim.netlify.app/)_
+_by [ilosrim](https://ilosrim.uz)_
