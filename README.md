@@ -10,7 +10,7 @@ Ishga tushirish uchun:
 ```bash
 npm start
 yoki
-yarn run dev
+yarn start
 ```
 
 _by [ilosrim](https://ilosrim.uz)_
