@@ -5,7 +5,7 @@ function Footer(props) {
   return (
     <div className="footer">
       <p className='footerTitle' >
-        <a className='footerLogo' href='https://t.me/ilosrim' target='_blank' rel="noreferrer" >&copy; ilosrim </a> 2021 - {new Date().getFullYear()} | Made with <FavoriteIcon className='heartIcon' />
+        <a className='footerLogo' href='mailto:info@ilosrim.uz' target='_blank' rel="noreferrer" >&copy; ilosrim </a> 2021 - {new Date().getFullYear()} | Made with <FavoriteIcon className='heartIcon' />
       </p>
     </div>
   );
