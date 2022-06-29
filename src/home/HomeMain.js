@@ -6,7 +6,7 @@ import AboutInfo from './AboutInfo';
 const HomeMain = () => {
   return (
     <>
-      <Slide top duration='1250'>
+      <Slide top duration={1250}>
         <NavSec />
       </Slide>
       <AboutInfo />

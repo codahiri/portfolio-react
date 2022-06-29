@@ -7,6 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import EmailIcon from '@material-ui/icons/Email'
 // animations
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
@@ -53,6 +54,11 @@ function AboutInfo() {
               </Slide>
 
               <div className='socialNet'>
+                <a className='links' href='mailto:info@ilosrim.uz' target='_blank' rel="noreferrer">
+                  <Jump duration='1400'>
+                    <EmailIcon className='github iconSvg' />
+                  </Jump>
+                </a>
                 <a className='links' href='https://github.com/ilosrim' target='_blank' rel="noreferrer">
                   <Jump duration='1400'>
                     <GitHubIcon className='github iconSvg' />
