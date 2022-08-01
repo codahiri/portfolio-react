@@ -6,6 +6,7 @@ import HomeMain from './home/HomeMain';
 import Portfolio from './portfolio/Portfolio';
 import SetUp from './setup/SetUp';
 import About from './about/About';
+import SolarSystemScope from './solarSystemScope';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -17,6 +18,7 @@ function Routing() {
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/setup' component={SetUp} />
         <Route path='/about' component={About} />
+        <Route path='/solarsystem' component={SolarSystemScope} />
       </Switch>
     </Router>
   );

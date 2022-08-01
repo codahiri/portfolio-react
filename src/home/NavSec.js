@@ -42,6 +42,9 @@ const NavSec = () => {
             <NavItem>
               <Link to='/about'>About</Link>
             </NavItem>
+            <NavItem>
+              <Link to='./solarsystem'>Solar System Scope</Link>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
