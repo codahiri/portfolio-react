@@ -25,11 +25,10 @@ function AboutInfo() {
 
 
   return (
-    <div className='aboutinfo'>
+    <div>
       {
         portfolios.map(portfolio => (
-
-          <>
+          <div key={Date.now()} className='aboutinfo'>
             <div className='side2'>
               <Zoom duration='1500'>
                 <img className='myImage' src={portfolio.image} alt='my pic.' />
@@ -47,9 +46,9 @@ function AboutInfo() {
                   <Link className='linkBtn' to='/about'>
                     About me
                   </Link>
-                  <Link className='linkBtn' to='/portfolio'>
-                    Portfolio
-                  </Link>
+                  <a className='linkBtn' href='https://biodasturchi.uz' target='_blank' rel="noreferrer">
+                    Blog
+                  </a>
                 </div>
               </Slide>
 
@@ -81,7 +80,7 @@ function AboutInfo() {
                 </a>
               </div>
             </div>
-          </>
+          </div>
           
         ))
       }

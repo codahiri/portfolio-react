@@ -14,7 +14,7 @@ const SolarSystemScope = () => {
         src="https://www.solarsystemscope.com/iframe" 
         style={{
         width:'100%',
-        minHeight: 400,
+        height: '100vh',
         border: '2px solid #0f5c6e',
       }}>
       </iframe>
