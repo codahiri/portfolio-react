@@ -19,7 +19,7 @@ function SetupMain(props) {
     <div className='setup-main'>
       {
         setups.map((setup) => (
-          <div className='setup-image'>
+          <div className='setup-image' key={Date.now()}>
             <img src={setup.image} alt='Setup pic' />
           </div>
         ))
@@ -32,7 +32,7 @@ function SetupMain(props) {
                 <ul>
                   <a href='https://www.acer.com/ac/en/GB/content/model/NX.HNTEK.002' target='_blank' rel="noreferrer">
                     <h2 className='laptop-logo'>Aspire 3 A315-55G</h2>
-                    <Shake duration='1500'>
+                    <Shake duration={1500}>
                       <ArrowUpwardIcon />
                     </Shake>
                   </a>
@@ -47,7 +47,7 @@ function SetupMain(props) {
                 <ul>
                   <div className='keyboard-title'>
                     <h2>Keyboard & Mouse</h2>
-                    <Shake duration='1500'>
+                    <Shake duration={1500}>
                       <ArrowUpwardIcon />
                     </Shake>
                   </div>

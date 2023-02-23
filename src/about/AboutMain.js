@@ -15,7 +15,6 @@ function AboutMain(props) {
   // my age
   const now = new Date();
   const age = now.getFullYear() - 1998;
-  console.log(age);
 
   return (
     <div className='about-main'>

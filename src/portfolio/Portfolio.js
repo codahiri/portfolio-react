@@ -8,11 +8,11 @@ import Footer from '../footer/Footer';
 function Portfolio() {
   return (
     <>
-      <Slide top duration='1000'>
+      <Slide top duration={1000}>
         <NavSec />
       </Slide>
         <PageInfo />
-      <Slide bottom duration='500'>
+      <Slide bottom duration={500}>
         <Projects />
         <Footer />
       </Slide>

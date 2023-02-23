@@ -4,13 +4,13 @@ import Particles from 'react-tsparticles'
 
 const Particle = () => {
   const particlesInit = (main) => {
-    console.log(main);
+    return main;
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    return container;
   };
 
   return ( <
@@ -82,7 +82,7 @@ const Particle = () => {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 4,
+            speed: 1,
             straight: false,
           },
           number: {

@@ -8,11 +8,11 @@ import Slide from 'react-reveal/Slide';
 function SetUp() {
   return (
     <>
-      <Slide top duration='1000'>
+      <Slide top duration={1000}>
         <NavSec />
         <PageInfo />
       </Slide>
-      <Slide bottom duration='1000'>
+      <Slide bottom duration={1000}>
         <SetupMain />
         <Footer />
       </Slide>
