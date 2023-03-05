@@ -53,9 +53,9 @@ function AboutInfo() {
               </Slide>
 
               <div className='socialNet'>
-                <a className='links' href='mailto:info@ilosrim.uz' target='_blank' rel="noreferrer">
+                <a className='links' href='mailto:ilosrim@yahoo.com' target='_blank' rel="noreferrer">
                   <Jump duration={1400}>
-                    <EmailIcon className='github iconSvg' />
+                    <EmailIcon className='email iconSvg' />
                   </Jump>
                 </a>
                 <a className='links' href='https://github.com/ilosrim' target='_blank' rel="noreferrer">
@@ -63,12 +63,12 @@ function AboutInfo() {
                     <GitHubIcon className='github iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://linkedin.com/in/ilosrim' target='_blank' rel="noreferrer" >
+                <a className='links' href='https://linkedin.com/in/mirjr' target='_blank' rel="noreferrer" >
                   <Jump duration={1300}>
                     <LinkedInIcon className='linkedin iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://twitter.com/ilosrim' target='_blank' rel="noreferrer" >
+                <a className='links' href='https://twitter.com/mirjr17' target='_blank' rel="noreferrer" >
                   <Jump duration={1200}>
                     <TwitterIcon className='twitter iconSvg' />
                   </Jump>
