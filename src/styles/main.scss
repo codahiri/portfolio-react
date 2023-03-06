@@ -11,7 +11,7 @@ $bgColor2: rgb(255, 0, 0);
 $whiteColor: #ffffff;
 $darkColor: #00000000;
 
-$titleColor: #e0e0e0;
+$titleColor: #f5c211;
 $mainColor: #949494;
 
 $homeButtonGray: #2b2b2b;
@@ -45,7 +45,7 @@ serif !important;
 @mixin Button {
   background-color: $homeButtonGray;
   padding: 10px 15px;
-  color: $whiteColor;
+  color: $titleColor;
   font-size: 20px;
   text-decoration: none;
   font-family: $robotoSlab;
@@ -61,6 +61,7 @@ serif !important;
     background-color: $homeButtonBlue;
     margin-left: 10px;
     transition: all 0.3s linear;
+    color: $whiteColor;
 
     &:hover {
       opacity: 0.8;
@@ -98,7 +99,7 @@ serif !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $whiteColor;
+  background-color: $titleColor;
   border-radius: 25px;
 }
 
@@ -121,7 +122,7 @@ nav {
     b {
       font-family: $robotoMono;
       font-weight: 700;
-      color: $whiteColor !important;
+      color: $titleColor !important;
     }
   }
 
@@ -134,7 +135,7 @@ nav {
       font-family: $robotoMono;
 
       a {
-        color: $whiteColor !important;
+        color: $titleColor !important;
         font-weight: 500;
         text-decoration: none;
         transition: all 0.3s linear;
@@ -439,7 +440,7 @@ nav.fixed {
 
     .footerLogo {
       text-decoration: none;
-      color: $whiteColor;
+      color: $titleColor;
       font-family: $robotoMono;
       font-weight: bold;
       margin-right: 5px;
@@ -456,7 +457,7 @@ nav.fixed {
   .visits {
     display: inline-block;
     background-color: $homeButtonBlue;
-    color: $whiteColor;
+    color: $titleColor;
     padding: 3px 6px;
     border-radius: 5px;
     font-size: 12px;
