@@ -9,7 +9,7 @@ $bgColor: #101010;
 $bgColor2: rgb(255, 0, 0);
 
 $whiteColor: #ffffff;
-$darkColor: #00000000;
+$darkColor: #000;
 
 $titleColor: #f5c211;
 $mainColor: #949494;
@@ -54,17 +54,17 @@ serif !important;
   transition: all 0.3s linear;
   
   &:hover {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   &:nth-child(2) {
-    background-color: $homeButtonBlue;
+    background-color: $titleColor;
     margin-left: 10px;
     transition: all 0.3s linear;
-    color: $whiteColor;
+    color: $bgColor;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 }
