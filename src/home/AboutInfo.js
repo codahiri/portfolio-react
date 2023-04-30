@@ -46,7 +46,7 @@ function AboutInfo() {
                   <Link className='linkBtn' to='/about'>
                     About me
                   </Link>
-                  <a className='linkBtn' href='https://www.biodasturchi.uz/pages/blog.html' target='_blank' rel="noreferrer">
+                  <a className='linkBtn' href='https://www.biodasturchi.uz' target='_blank' rel="noreferrer">
                     Blog
                   </a>
                 </div>
