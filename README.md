@@ -9,4 +9,5 @@ Ishga tushirish uchun:
 yarn start
 ```
 
+
 _by [ilosrim](https://ilosrim.uz)_
