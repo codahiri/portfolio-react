@@ -3,11 +3,7 @@ import db from '../firebase/config';
 import { Link } from 'react-router-dom';
 import '../styles/animation.scss';
 // icons
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import EmailIcon from '@material-ui/icons/Email'
+import { GitHub, LinkedIn, Twitter, Instagram, Email, YouTube } from '@material-ui/icons';
 // animations
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
@@ -55,27 +51,32 @@ function AboutInfo() {
               <div className='socialNet'>
                 <a className='links' href='mailto:ilosrim@yahoo.com' target='_blank' rel="noreferrer">
                   <Jump duration={1400}>
-                    <EmailIcon className='email iconSvg' />
+                    <Email className='email iconSvg' />
                   </Jump>
                 </a>
                 <a className='links' href='https://github.com/ilosrim' target='_blank' rel="noreferrer">
                   <Jump duration={1400}>
-                    <GitHubIcon className='github iconSvg' />
+                    <GitHub className='github iconSvg' />
                   </Jump>
                 </a>
                 <a className='links' href='https://linkedin.com/in/mirjr' target='_blank' rel="noreferrer" >
                   <Jump duration={1300}>
-                    <LinkedInIcon className='linkedin iconSvg' />
+                    <LinkedIn className='linkedin iconSvg' />
                   </Jump>
                 </a>
                 <a className='links' href='https://twitter.com/mirjr17' target='_blank' rel="noreferrer" >
                   <Jump duration={1200}>
-                    <TwitterIcon className='twitter iconSvg' />
+                    <Twitter className='twitter iconSvg' />
                   </Jump>
                 </a>
-                <a className='links' href='https://instagram.com/ilosrim' target='_blank' rel="noreferrer" >
+                <a className='links' href='https://instagram.com/mirjr17' target='_blank' rel="noreferrer" >
                   <Jump duration={1000}>
-                    <InstagramIcon className='instagram iconSvg' />
+                    <Instagram className='instagram iconSvg' />
+                  </Jump>
+                </a>
+                <a className='links' href='https://youtube.com/@mirjr17' target='_blank' rel="noreferrer" >
+                  <Jump duration={1000}>
+                    <YouTube className='instagram iconSvg' />
                   </Jump>
                 </a>
               </div>
